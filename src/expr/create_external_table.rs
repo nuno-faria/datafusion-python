@@ -97,6 +97,7 @@ impl PyCreateExternalTable {
                 .into_iter()
                 .map(|(k, v)| (k, v.into()))
                 .collect(),
+            or_replace: true,
         };
         PyCreateExternalTable { create }
     }
